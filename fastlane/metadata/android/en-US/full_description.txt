@@ -1,0 +1,12 @@
+MoneroFlow is a self-custody point-of-sale and payment terminal for Monero (XMR) and TRON USDT.
+
+Generate payment links and QR codes for physical or online items, share them with customers, and confirm payments in real time. Payments go straight to your own wallet — MoneroFlow never holds your keys.
+
+Key features:
+• Send, receive and scan Monero and USDT payments
+• POS-style payment links with QR codes for websites and physical stores
+• Live on-chain balance with FAST and FULL sync
+• Automatic node failover keeps syncs reliable
+• Privacy first: all data stays on your device
+
+MoneroFlow is free and open source under the MIT license. Your keys, your coins.

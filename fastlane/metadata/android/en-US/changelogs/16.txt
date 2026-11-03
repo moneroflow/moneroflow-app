@@ -1,0 +1,7 @@
+* Release-signed build (MoneroFlow keystore) for F-Droid
+* Payment links fix: in-app deep-link routing on Android
+* Send / Receive / Scan buttons on the Overview tab
+* Masked wallet balance with admin reveal (session token + timeout)
+* Automatic Monero node failover for reliable sync
+* FAST / FULL wallet sync with persistent balance cache
+* Monero Flow privacy-first theming
