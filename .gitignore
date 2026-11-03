@@ -1,9 +1,75 @@
-
-node_modules/
-target/
-dist/
+# ---- Sensitive / secrets (never publish) ----
 .env
-*.log
-.cargo/
-.DS_Store
+.env.*
+!.env.example
+keystore.properties
+*.jks
+*.keystore
+local.properties
+android/app/*.keystore
+*.p12
+
+# ---- Build artifacts ----
+node_modules/
+dist/
+target/
+build/
+.gradle/
 .repro/
+*.log
+*.timestamp-*.mjs
+
+# ---- Internal / niche tooling ----
+.vscode/
+.idea/
+memory/
+playwright/
+vitest.config.*
+playwright.config.*
+
+# ---- Deployment / Akash / docker (web-side, not APK source) ----
+deploy.yaml
+deploy.yaml.bak*
+docker-compose*.yml
+docker-compose*.yaml
+Dockerfile
+dockerfile
+nginx.conf
+.dockerignore
+build.sh
+.github/workflows/deploy.yml
+
+# ---- One-off scrub / dev python scripts (no legit Python in this app) ----
+*.py
+*.pyc
+!scripts/*.py
+
+# ---- Internal status / progress / fix-note docs (NOT public docs) ----
+# Whitelist README + ARCHITECTURE; block every other root-level .md
+/*.md
+!/README.md
+!/ARCHITECTURE.md
+*PROGRESS*.md
+*UPDATES*.md
+*PHASE*.md
+SWEEP_*.md
+TRX-*.md
+USDT-*.md
+COLD*.md
+TAURI-PROGRESS.md
+
+# ---- One-off / ad-hoc scripts (no legit shell in this app) ----
+*.sh
+fix-existing-merchant-tron.js
+playwright-fixture.ts
+
+# ---- AGENTS.md / agent notes (personnel + stale paths) ----
+AGENTS.md
+
+# ---- Nested third-party / unrelated projects ----
+xmrpay-flow-main/
+app-ui/
+target/
+
+# ---- Reverse-engineered reference material (Cake Wallet GPLv3 source) ----
+reverse-engineering/cake-design-system/
