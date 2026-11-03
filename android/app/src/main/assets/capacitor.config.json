@@ -1,0 +1,36 @@
+{
+	"appId": "com.moneroflow.app",
+	"appName": "MoneroFlow",
+	"webDir": "dist",
+	"server": {
+		"androidScheme": "https",
+		"iosScheme": "capacitor",
+		"cleartext": false
+	},
+	"android": {
+		"backgroundColor": "#0a0a0a",
+		"allowMixedContent": false
+	},
+	"ios": {
+		"contentInset": "always",
+		"backgroundColor": "#0a0a0a"
+	},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": true
+		},
+		"CapacitorCookies": {
+			"enabled": true
+		},
+		"Camera": {
+			"presentationStyle": "fullscreen",
+			"saveToGallery": false
+		},
+		"Biometric": {},
+		"SplashScreen": {
+			"backgroundColor": "#0a0a0a",
+			"showSpinner": false,
+			"androidScaleType": "CENTER_CROP"
+		}
+	}
+}
