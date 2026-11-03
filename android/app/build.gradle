@@ -21,7 +21,6 @@ android {
             }
         }
     }
-
     defaultConfig {
         applicationId "com.moneroflow.app"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -39,7 +38,12 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
+            // Sign with the MoneroFlow keystore only when keystore.properties is
+            // present (local/GitHub releases). When absent (a fresh F-Droid
+            // checkout), build unsigned so F-Droid can sign with their own key.
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
