@@ -16,7 +16,7 @@ node_modules/
 target/
 build/
 .gradle/
-.repro/
+.repro*/
 *.log
 *.timestamp-*.mjs
 

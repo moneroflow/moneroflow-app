@@ -1,0 +1,8 @@
+* First F-Droid submission build (v2.5)
+* Disabled APK dependency-metadata block for reproducible builds
+* Release-signed with the MoneroFlow keystore
+* Payment links route in-app on Android (HashRouter deep links)
+* Send / Receive / Scan buttons on the Overview tab
+* Masked balance with admin session token + adjustable timeout
+* Autonomous Monero node failover + FAST / FULL sync
+* Monero-only privacy-first theming
