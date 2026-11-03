@@ -11,7 +11,8 @@ android/app/*.keystore
 
 # ---- Build artifacts ----
 node_modules/
-dist/
+# Build web bundle is committed to satisfy F-Droid's cap-sync reproducibility
+# (node_modules and intermediate dist are NOT tracked; but final web output IS)
 target/
 build/
 .gradle/
